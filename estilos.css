@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap');
 * {
   box-sizing: border-box;
+  font-family: 'Libre Baskerville', serif;
+
 }
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
   background-color: #f9f8eb;
+  font-family: 'Libre Baskerville', serif;
+
 }
 
 .filters_select_aside {
@@ -37,7 +41,6 @@ body {
 
 .nav_area li a {
   padding: 10px;
-  font-family: sans-serif;
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
@@ -46,7 +49,7 @@ body {
 .nav_area > form {
   display: flex;
   justify-content: flex-end;
-  margin-top: 3px;
+  margin: 5px 0 5px 0;
 }
 
 .nav_area input {
@@ -117,8 +120,10 @@ body {
   margin: 20px;
 }
 
-.box h5 {
+.box h2 {
   padding: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
 }
 
 .column_shop {
@@ -181,14 +186,13 @@ body {
 }
 
 /* 
-ADDRESS AND NAME INPUT 
+Profile inputs
 */
 
 #user_data input,
 span,
 label,
 textarea {
-  font-family: 'Ubuntu', sans-serif;
   display: block;
   margin: 10px;
   padding: 5px;
@@ -214,7 +218,6 @@ textarea.question {
   background: rgba(0, 0, 0, 0);
   transition: padding-top 0.2s ease, margin-top 0.2s ease;
   overflow-x: hidden;
-  /* Hack to make "rows" attribute apply in Firefox. */
 }
 
 /* Underline and Placeholder */
@@ -345,7 +348,12 @@ CARD REGISTER
 .container {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 10%;
+  margin-bottom: 10px;
+}
+.container input{
+  width: 80%;
+  margin-left: 10px;
+  padding-left: 10px;
 }
 
 .card-number {
@@ -393,11 +401,6 @@ CARD REGISTER
   margin-right: 2px;
 }
 
-.container input{
-  width: 80%;
-  margin-left: 10px;
-  padding-left: 10px;
-}
 
 
 /* Tarjetas Guardadas*/
@@ -535,7 +538,8 @@ CARD REGISTER
 }
 
 #aside-index {
-  padding-top: 20px;
+  padding-top: 60px;
+  margin-left: 15px;
 }
 
 .pic-container {
