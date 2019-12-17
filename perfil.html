@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="reset.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="estilos.css" type="text/css">
+  <title>Yum! Delivery</title>
+</head>
+
+<body id="profile_body">
+  <header>
+    <nav class="nav_area">
+      <ul>
+        <li><a href="index.html" id="home_responsive"><img src="https://via.placeholder.com/40" alt="home"></a></li>
+        <li><a href="restaurantes.html">Restaurantes</a></li>
+        <li><a class="active" href="perfil.html">Perfil</a></li>
+        <li><a href="carrito.html"><i class="fas fa-shopping-cart fa-lg"></i></a></li>
+      </ul>
+      <form action="URL">
+        <input type="search" placeholder="Que se te antoja hoy?">
+        <button><i class="fas fa-search"></i></button>
+      </form>
+      <a href="index.html" id="home_full"><img src="https://via.placeholder.com/40" alt="home"></a>
+    </nav>
+  </header>
+  <!-- Opciones de Perfil -->
+  <div class="wrapper">
+    <aside id="profile">
+      <a href="#user_data">
+        Datos de Usuario
+      </a>
+      <a href="#user_payment">
+        Datos de Pago
+      </a>
+    </aside>
+    <!-- datos de perfil -->
+    <section id="user_data">
+      <div class="pic-container pic-medium pic-circle">
+        <img class="pic" src="https://icon-library.net/images/default-profile-icon/default-profile-icon-24.jpg" alt="">
+        <div class="pic-overlay">
+          <a><i class="fa fa-window-close-o" aria-hidden="true"></i></a>
+          <a><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <form id="filldata">
+        <input type="text" name="name" class="question" id="nme" required="" autocomplete="off" />
+        <label for="nme"><span>Nombre de usuario</span></label>
+        <textarea name="message" rows="2" class="question" id="msg" required="" autocomplete="off"></textarea>
+        <label for="msg"><span>Direccion:</span></label>
+        <input type="submit" value="Guardar Datos" />
+      </form>
+      <hr>
+    </section>
+    <!-- datos de pago -->
+    <section id="user_payment">
+      <h2>Registrar Nueva Tarjeta</h2>
+      <div class="wrapper-card">
+        <div class="container">
+          <div class="card-number">
+            <label>Numero de Tarjeta</label>
+            <input placeholder="0000 0000 0000 0000" type="number">
+          </div>
+          <div class="name">
+            <label>Nombre</label>
+            <input placeholder="Nombre" type="text">
+          </div>
+          <div class="expiration-security">
+            <div class="expiration">
+              <label>Fecha de Vencimiento</label>
+              <div class="expiry-inputs">
+                <input class="month" placeholder="MM" type="number">
+                <input class="year" placeholder="YYYY" type="number">
+              </div>
+            </div>
+            <div class="security">
+              <label>Codigo de Seguridad</label>
+              <input placeholder="087" type="password">
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="dropdown">
+        <button class="dropbtn">Metodos de Pago Guardados</button>
+        <div class="dropdown-content">
+          <a href="#">Tarjeta 1</a>
+          <a href="#">Tarjeta 2</a>
+          <a href="#">Tarjeta 3</a>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="https://kit.fontawesome.com/4fe484a3e6.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

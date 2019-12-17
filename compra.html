@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="reset.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="estilos.css" type="text/css">
+  <title>Yum! Delivery</title>
+</head>
+
+<body>
+  <header>
+    <nav class="nav_area">
+      <ul>
+        <li><a href="index.html" id="home_responsive"><img src="https://via.placeholder.com/40" alt="home"></a></li>
+        <li><a href="restaurantes.html">Restaurantes</a></li>
+        <li><a href="perfil.html">Perfil</a></li>
+        <li><a href="carrito.html"><i class="fas fa-shopping-cart fa-lg"></i></a></li>
+      </ul>
+      <form action="URL">
+        <input type="search" placeholder="Que se te antoja hoy?">
+        <button><i class="fas fa-search"></i></button>
+      </form>
+      <a href="index.html" id="home_full"><img src="https://via.placeholder.com/40" alt="home"></a>
+    </nav>
+  </header>
+  <div id="wrapper_shop">
+    <aside id="shopping_payment">
+      <div id="deliver_data">
+        <label>
+           Direccion de Envio
+        </label>
+        <label>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt maiores, necessitatibus eos beatae! Hic quas numquam inventore quia maxime ullam debitis eos quis, assumenda a magnam sequi quos rerum voluptas! </label>
+      </div>
+      <div id="deliver_payment">
+        <label>Metodo de Pago</label>
+        <select>
+          <option value="01">Tarjeta 1</option>
+          <option value="02">Tarjeta 2</option>
+          <option value="03">Paypal</option>
+          <option value="04">Efectivo</option>
+        </select>
+      </div>
+    </aside>
+    <section id="payment_view">
+      <div id="column_payment">
+        <div class="wrapper_payment">
+          <button id="confirm_payment">Confirmar Pago</button>
+        </div>
+        <div class="wrapper_payment">
+          <div class="box">
+            <img src="https://via.placeholder.com/200" alt="Imagen">
+            <h5 class="price"> precio</h5>
+          </div>
+          <div class="box">
+            <img src="https://via.placeholder.com/200" alt="Imagen">
+            <h5 class="price"> precio</h5>
+          </div>
+        </div>
+        <div class="wrapper_payment">
+          <div class="box">
+            <img src="https://via.placeholder.com/200" alt="Imagen">
+            <h5 class="price"> precio</h5>
+          </div>
+          <div class="box">
+            <img src="https://via.placeholder.com/200" alt="Imagen">
+            <h5 class="price"> precio</h5>
+          </div>
+        </div>
+        <h5 id="total"> Total a pagar:</h5>
+      </div>
+    </section>
+  </div>
+  <script src="https://kit.fontawesome.com/4fe484a3e6.js" crossorigin="anonymous"></script>
+</body>
+</html>

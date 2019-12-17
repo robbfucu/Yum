@@ -1,0 +1,899 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f9f8eb;
+}
+
+.filters_select_aside {
+  margin-top: 20px;
+}
+
+.nav_area {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  background: #f45905;
+  color: #fff;
+  padding: 0 1em 0 1em;
+  border-radius: 25px;
+}
+
+.nav_area > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav_area li {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.nav_area li a {
+  padding: 10px;
+  font-family: sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.nav_area > form {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 3px;
+}
+
+.nav_area input {
+  border: 0;
+  width: 400px;
+  height: 45px;
+  font-size: 16px;
+  padding: 0 15px 0 10px;
+}
+
+.nav_area button {
+  background: #45969b;
+  border: 0;
+  height: 45px;
+  color: #fff;
+  padding: 8px 20px;
+}
+
+.nav_area a:hover {
+  background-color: #76b39d;
+  color: black;
+  border-radius: 15%;
+}
+
+.nav_area a.active {
+  background-color: #76b39d;
+  color: white;
+  border-radius: 15px;
+}
+
+.nav_area a img {
+  display: inline-flex;
+  margin-top: 8px;
+
+}
+
+#carrousel {
+  margin-top: 20px;
+  justify-content: center;
+  display: flex;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper_payment {
+  display: flex;
+  justify-content: space-around;
+}
+
+#rests {
+  display: flex;
+  margin-left: 80px;
+  margin-top: 40px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+}
+
+.box h5 {
+  padding: 20px;
+}
+
+.column_shop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px solid black;
+  width: 60%;
+  height: 40%;
+}
+
+#shopping_cart {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  overflow: scroll;
+}
+
+.sub {
+  display: flex;
+  justify-content: flex-end;
+  padding: -50;
+}
+
+.price {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#user_data {
+  flex-direction: column;
+  font-size: 28px;
+  margin-right: 260px;
+}
+
+#profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 500px;
+  height: 300px;
+  font-size: 48px;
+
+}
+
+#profile a {
+  display: flex;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  flex-direction: row;
+}
+
+#profile a:hover {
+  color: #c70d3a;
+}
+
+#filldata {
+  margin-top: 40px;
+}
+
+/* 
+ADDRESS AND NAME INPUT 
+*/
+
+#user_data input,
+span,
+label,
+textarea {
+  font-family: 'Ubuntu', sans-serif;
+  display: block;
+  margin: 10px;
+  padding: 5px;
+  border: none;
+  font-size: 22px;
+}
+
+textarea:focus,
+input:focus {
+  outline: 0;
+}
+
+/* Question */
+
+input.question,
+textarea.question {
+  font-size: 48px;
+  font-weight: 300;
+  border-radius: 2px;
+  margin: 0;
+  border: none;
+  width: 80%;
+  background: rgba(0, 0, 0, 0);
+  transition: padding-top 0.2s ease, margin-top 0.2s ease;
+  overflow-x: hidden;
+  /* Hack to make "rows" attribute apply in Firefox. */
+}
+
+/* Underline and Placeholder */
+
+input.question + label,
+textarea.question + label {
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+  width: 25%;
+  border-top: 1px solid red;
+  -webkit-transition: width 0.4s ease;
+  transition: width 0.4s ease;
+  height: 0px;
+}
+
+input.question:focus + label,
+textarea.question:focus + label {
+  width: 80%;
+}
+
+input.question:focus,
+input.question:valid {
+  padding-top: 35px;
+}
+
+textarea.question:valid,
+textarea.question:focus {
+  margin-top: 35px;
+}
+
+input.question:focus + label > span,
+input.question:valid + label > span {
+  top: -100px;
+  font-size: 16px;
+  color: #333;
+}
+
+textarea.question:focus + label > span,
+textarea.question:valid + label > span {
+  top: -150px;
+  font-size: 16px;
+  color: #333;
+}
+
+input.question:valid + label,
+textarea.question:valid + label {
+  border-color: green;
+}
+
+input.question:invalid,
+textarea.question:invalid {
+  box-shadow: none;
+}
+
+input.question + label > span,
+textarea.question + label > span {
+  font-weight: 300;
+  margin: 0;
+  position: absolute;
+  color: #8F8F8F;
+  font-size: 20px;
+  top: -30px;
+  left: 0px;
+  z-index: -1;
+  -webkit-transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+  transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+}
+
+input[type="submit"] {
+  -webkit-transition: opacity 0.2s ease, background 0.2s ease;
+  transition: opacity 0.2s ease, background 0.2s ease;
+  display: block;
+  opacity: 0;
+  margin: 10px 0 0 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: #EEE;
+}
+
+input[type="submit"]:active {
+  background: #999;
+}
+
+input.question:valid ~ input[type="submit"],
+textarea.question:valid ~ input[type="submit"] {
+  -webkit-animation: appear 1s forwards;
+  animation: appear 1s forwards;
+}
+
+input.question:invalid ~ input[type="submit"],
+textarea.question:invalid ~ input[type="submit"] {
+  display: none;
+}
+
+@-webkit-keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}
+
+/* 
+CARD REGISTER 
+*/
+
+.wrapper-card {
+  border-radius: 2px;
+  padding: 2px;
+  background-color: #eee;
+  border: 1px solid #000;
+  width: 50%;
+}
+
+/* Form
+-------------------------------------------------*/
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10%;
+}
+
+.card-number {
+  flex: 100%;
+}
+
+.name {
+  flex: 22rem;
+}
+
+.month {
+  width: 5.4rem;
+}
+
+.year {
+  width: 6.6rem;
+}
+
+.security {
+  flex: 11rem;
+}
+
+.expiry-inputs {
+  display: flex;
+}
+
+.expiration-security {
+  display: flex;
+  flex: auto;
+  flex-wrap: wrap;
+}
+
+.card-number,
+.name,
+.expiry-inputs,
+.expiration {
+  margin-bottom: 2px;
+}
+
+.expiry-inputs,
+.month,
+.expiration-security,
+.name,
+.card-number {
+  margin-right: 2px;
+}
+
+.container input{
+  width: 80%;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+
+/* Tarjetas Guardadas*/
+/* Dropdown Button */
+.dropbtn {
+  background-color: #f45905;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #ff7315;
+}
+
+.rests_filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 10%;
+  margin-top: 35px;
+
+}
+
+#shopping_payment {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 20%;
+  margin-left: 70px;
+}
+
+#column_payment {
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+#total {
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 100px;
+}
+
+#delete_all {
+  background-color: #f45905;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  width: 150px;
+}
+
+#confirm_payment {
+  background-color: #f45905;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  width: 150px;
+}
+
+#wrapper_shop {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#payment_view {
+  margin-left: 10%;
+}
+
+.wrapper_index {
+  display: flex;
+  justify-content: space-between;
+}
+
+#wrapper_search {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rest_name {
+  font-size: 30px;
+}
+
+#go_payment {
+  background-color: #f45905;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  width: 150px;
+  margin-left: 20px
+}
+
+#rests_search {
+  flex-direction: column;
+  margin-right: 20%;
+}
+
+#aside-index {
+  padding-top: 20px;
+}
+
+.pic-container {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.pic {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.pic-container.pic-medium {
+  width: 150px;
+  height: 150px;
+}
+
+.pic-container.pic-circle {
+  border-radius: 50%;
+}
+
+.pic-overlay {
+  background-color: #ccc;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.pic-container:hover .pic-overlay {
+  top: -100%;
+}
+
+.pic-overlay a {
+  display: block;
+  padding: 10px;
+}
+
+
+
+.pic-overlay .fa-window-close-o {
+  color: red;
+}
+
+.pic-overlay .fa-pencil-square-o {
+  color: blue;
+}
+
+.pic-medium .pic-overlay a i {
+  font-size: 20px;
+}
+
+/* Modal Window*/
+
+
+#register {
+  display: inline-flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+#login_button {
+  background-color: #fd5f00;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 117px;
+}
+
+.user_register {
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 40%;
+}
+
+#register_confirm {
+  display: block;
+  margin: 10px;
+  padding: 5px;
+  border: none;
+  font-size: 22px;
+  width: 25%;
+
+}
+
+#imgreg {
+  display: inline-flex;
+  align-self: center;
+  margin-right: 70%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#user_data{
+  display: none;
+}
+#user_payment{
+ display: none;
+ margin-top: 20px;
+  
+}
+#user_payment h2{
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  }
+#user_data:target{
+  display: block;
+}
+#user_payment:target{
+  display: block;
+}
+/* Responsivo para min 768 y max 991  */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+  .nav_area {
+    flex-direction: column;
+  }
+
+  .nav_area {
+    flex-direction: row;
+    margin-bottom: 1em;
+  }
+
+  #carrousel {
+    display: none;
+  }
+
+  #aside-index {
+    display: none;
+  }
+
+  #rests {
+    flex-direction: column;
+  }
+
+  .column_shop {
+    width: 100%;
+  }
+
+  #profile {
+    width: 40%;
+  }
+
+  #user_data {
+    width: 60%;
+  }
+
+  hr {
+    width: 100%;
+  }
+
+  #wrapper_shop {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  #shopping_payment {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  #column_payment {
+    width: 100%;
+    margin: auto;
+  }
+
+  #wrapper_search {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .wrapper_index {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .rests_filter {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-direction: row;
+    height: 70px;
+  }
+
+  #rests_search {
+    height: 100%;
+    margin-right: auto;
+  }
+
+  #rests_filter {
+    height: 100%;
+    margin-right: auto;
+  }
+}
+
+#home_responsive {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+
+  .nav_area {
+    flex-direction: column;
+  }
+
+  .nav_area ul {
+    flex-direction: row;
+    margin-bottom: 1em;
+  }
+
+  .nav_area li {
+    padding: 0;
+    font-size: 16px;
+  }
+
+  #carrousel {
+    display: none;
+  }
+
+  #aside-index {
+    display: none;
+  }
+
+  #rests {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #home_responsive {
+    display: block;
+    margin-top: -15px;
+  }
+
+  #home_full {
+    display: none;
+  }
+
+  .nav_area > form {
+    margin-bottom: 10px;
+  }
+
+  hr {
+    width: 100%;
+  }
+
+  #profile {
+    width: 35%;
+  }
+
+  .wrapper-card {
+    width: 80%;
+  }
+
+  .wrapper-card input {
+    width: 90%;
+  }
+
+  .column_shop {
+    width: 100%;
+  }
+
+  #profile {
+    width: 40%;
+  }
+
+  #user_data {
+    width: 60%;
+    margin-left: 75px;
+  }
+  #user_payment{
+    margin-left: 10%;
+  }
+
+  hr {
+    width: 100%;
+  }
+
+  #wrapper_shop {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #shopping_payment {
+    width: 100%;
+    margin: 20px 50px 0 10px;
+  }
+
+  #column_payment {
+    width: 100%;
+    margin: auto;
+    flex-direction: column;
+  }
+
+  #wrapper_search {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .wrapper_index {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .rests_filter {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-direction: row;
+    height: 70px;
+    margin-left: 75px;
+  }
+
+  #rests_search {
+    height: 100%;
+    margin-right: auto;
+  }
+
+  #rests {
+    margin: 0;
+  }
+
+  .filters_select_aside {
+    margin-right: 15px;
+  }
+
+  #payment_view {
+    flex-direction: column;
+    margin-top: 10px;
+    width: 100%;
+    margin-left: auto;
+  }
+
+  .wrapper_payment {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  #register{
+    width: 100%;
+    margin-right: 30%;
+  }
+  #register_confirm{
+    width: 50%;
+  }
+
+}
