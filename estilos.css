@@ -169,13 +169,24 @@ body {
   margin: 10px solid black;
   width: 60%;
   height: 40%;
+      border: 1px solid black;
+
+}
+
+.column_shop img{
+  max-width: 35%;
+  max-height: 30%;
+}
+
+.column_shop p{
+  font-size: 16px;
+  font-weight: bold;
 }
 
 #shopping_cart {
   display: flex;
   justify-content: center;
   margin-top: 60px;
-  overflow: scroll;
 }
 
 .sub {
@@ -199,8 +210,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 500px;
-  height: 300px;
+  width: 35%;
+  height: 30%;
   font-size: 48px;
   margin-right: 20px;
   margin-left: 10px;
@@ -917,6 +928,15 @@ CARD REGISTER
     width: 40%;
   }
 
+  #profile a{
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  #profile span{
+    font-size: 10px;
+  }
+  
   #user_data {
     width: 60%;
     margin-left: 75px;
