@@ -11,7 +11,8 @@ body {
   background-color: #f9f8eb;
   font-family: 'Libre Baskerville', serif;
 }
-.logohome{
+
+.logohome {
   width: 40px;
   height: 40px;
 }
@@ -80,12 +81,12 @@ body {
   border-radius: 15%;
 }
 
-#home_responsive:hover{
-  background-color:transparent;
+#home_responsive:hover {
+  background-color: transparent;
 }
 
-#home_full:hover{
-  background-color:transparent;
+#home_full:hover {
+  background-color: transparent;
 }
 
 
@@ -119,8 +120,18 @@ body {
 
 #rests {
   display: flex;
-  margin-left: 80px;
+  margin-left: 100px;
   margin-top: 40px;
+  align-self: flex-start;
+}
+
+#rests img{
+  max-height: 240px;
+  max-width: 240px;
+}
+
+.rests_data{
+  font-size: 18px;
 }
 
 .column {
@@ -192,7 +203,8 @@ body {
   height: 300px;
   font-size: 48px;
   margin-right: 20px;
-  margin-left: 1  0px;
+  margin-left: 10px;
+  margin-top: 20px;
 }
 
 #profile a {
@@ -201,10 +213,33 @@ body {
   text-align: center;
   text-decoration: none;
   flex-direction: row;
+  align-self: center;
 }
 
 #profile a:hover {
   color: #c70d3a;
+}
+
+.profile_polaroid {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-color: #f9f8eb;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+  padding-top: 15px;
+  border: 1px solid gray;
+}
+
+.profile_container {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.profile_container span {
+  font-size: 14px;
 }
 
 #filldata {
@@ -427,9 +462,10 @@ CARD REGISTER
   margin-right: 2px;
 }
 
-#save_card{
+#save_card {
   margin: 10px 0 10px 0;
 }
+
 /* Tarjetas Guardadas*/
 /* Dropdown Button */
 .dropbtn {
@@ -484,7 +520,7 @@ CARD REGISTER
   flex-direction: column;
   justify-content: space-around;
   width: 10%;
-  margin-top: -60px;
+  margin-top: 60px;
   margin-left: 10px;
 
 }
@@ -545,6 +581,12 @@ CARD REGISTER
   justify-content: space-between;
 }
 
+.wrapper_rests {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 15%;
+}
+
 #wrapper_search {
   display: flex;
   justify-content: space-between;
@@ -570,10 +612,32 @@ CARD REGISTER
   margin-top: 20px;
 }
 
+#rests_search img{
+  max-height: 240px;
+  max-width: 240px;
+}
+
 #aside-index {
   padding-top: 60px;
   margin-left: 15px;
   text-align: center;
+}
+
+#aside-index img {
+  border-radius: 25%;
+}
+
+.polaroid {
+  background-color: #f9f8eb;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-radius: 25%;
+}
+
+.container_polaroid {
+  text-align: center;
+  padding: 10px 20px;
 }
 
 .pic-container {
@@ -680,6 +744,7 @@ CARD REGISTER
 #user_payment {
   display: none;
   margin-top: 20px;
+
 
 }
 
@@ -836,10 +901,6 @@ CARD REGISTER
     width: 100%;
   }
 
-  #profile {
-    width: 35%;
-  }
-
   .wrapper-card {
     width: 80%;
   }
@@ -874,6 +935,14 @@ CARD REGISTER
     justify-content: center;
   }
 
+  .wrapper_rests {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15%;
+    flex-direction: column;
+    width: 100%;
+  }
+  
   #shopping_payment {
     width: 100%;
     margin: 20px 50px 0 10px;
@@ -902,7 +971,6 @@ CARD REGISTER
     margin-bottom: 20px;
     flex-direction: row;
     height: 70px;
-    margin-left: 75px;
   }
 
   #rests_search {
@@ -939,7 +1007,8 @@ CARD REGISTER
   #register_confirm {
     width: 50%;
   }
-  .nav_area a img{
+
+  .nav_area a img {
     margin-top: 10px;
-  } 
+  }
 }
