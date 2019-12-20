@@ -169,8 +169,6 @@ body {
   margin: 10px solid black;
   width: 60%;
   height: 40%;
-      border: 1px solid black;
-
 }
 
 .column_shop img{
@@ -587,6 +585,11 @@ CARD REGISTER
   margin-left: 10%;
 }
 
+#payment_view img{
+  max-height: 240px;
+  max-width: 240px;
+}
+
 .wrapper_index {
   display: flex;
   justify-content: space-between;
@@ -755,8 +758,6 @@ CARD REGISTER
 #user_payment {
   display: none;
   margin-top: 20px;
-
-
 }
 
 #user_payment h2 {
