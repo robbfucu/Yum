@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="reset.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="estilos.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Open+Sans&display=swap" rel="stylesheet">
   <title>Yum! Delivery</title>
 </head>
 
@@ -13,25 +14,33 @@
   <header>
     <nav class="nav_area">
       <ul>
-        <li><a href="index.html" id="home_responsive"><img src="https://via.placeholder.com/40" alt="home"></a></li>
+        <li>
+          <a href="index.html" id="home_responsive">
+            <img src="src/logo.png" alt="home" width="40" height="40">
+          </a>
+        </li>
         <li><a href="restaurantes.html">Restaurantes</a></li>
         <li><a href="perfil.html">Perfil</a></li>
-        <li><a href="carrito.html"><i class="fas fa-shopping-cart fa-lg"></i></a></li>
+        <li>
+          <a href="carrito.html">
+            <i class="fas fa-shopping-cart fa-lg"></i>
+          </a>
+        </li>
       </ul>
       <form action="URL">
         <input type="search" placeholder="Que se te antoja hoy?">
         <button><i class="fas fa-search"></i></button>
       </form>
-      <a href="index.html" id="home_full"><img src="https://via.placeholder.com/40" alt="home"></a>
+      <a href="index.html" id="home_full"><img src="src/logo.png" alt="home" width="40" height="40"></a>
     </nav>
   </header>
   <div id="wrapper_shop">
     <aside id="shopping_payment">
       <div id="deliver_data">
         <label>
-           Direccion de Envio
+          Direccion de Envio
         </label>
-        <label>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt maiores, necessitatibus eos beatae! Hic quas numquam inventore quia maxime ullam debitis eos quis, assumenda a magnam sequi quos rerum voluptas! </label>
+        <label>Calle 6, #115 Col. Espejo 1 </label>
       </div>
       <div id="deliver_payment">
         <label>Metodo de Pago</label>
@@ -50,28 +59,26 @@
         </div>
         <div class="wrapper_payment">
           <div class="box">
-            <img src="https://via.placeholder.com/200" alt="Imagen">
-            <h5 class="price"> precio</h5>
+            <img src="src/tacopastor1.jpg" alt="Imagen">
+            <h5 class="price"> $14.00</h5>
           </div>
           <div class="box">
-            <img src="https://via.placeholder.com/200" alt="Imagen">
-            <h5 class="price"> precio</h5>
+            <img src="src/taco3.jpg" alt="Imagen">
+            <h5 class="price"> $14.00</h5>
           </div>
         </div>
         <div class="wrapper_payment">
           <div class="box">
-            <img src="https://via.placeholder.com/200" alt="Imagen">
-            <h5 class="price"> precio</h5>
-          </div>
-          <div class="box">
-            <img src="https://via.placeholder.com/200" alt="Imagen">
-            <h5 class="price"> precio</h5>
+            <img src="src/tonicol.jpg" alt="Imagen">
+            <h5 class="price"> $16.00</h5>
           </div>
         </div>
-        <h5 id="total"> Total a pagar:</h5>
+        <h6>Costo de envio: $30.00</h6>
+        <h5 id="total"> Total a pagar: <strong>$74.00</strong></h5>
       </div>
     </section>
   </div>
   <script src="https://kit.fontawesome.com/4fe484a3e6.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
